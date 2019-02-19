@@ -1,4 +1,5 @@
 from datetime import datetime
+import time
 
 odds = range(1,60,2)
 
@@ -8,7 +9,5 @@ if right_this_minute in odds:
     print("This minute seems a little odd.")
 else:
     print("Not an odd minute.")
-
-import time
 
 print(time.strftime("%H %M"))
