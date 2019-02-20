@@ -1,4 +1,8 @@
+# import functionality from Python's standard library (module datetime and submodule datetime)
 from datetime import datetime
+# import module os and function getcwd
+from os import getcwd
+import sys
 
 odds = [ 1,  3,  5,  7,  9, 11, 13, 15, 17, 19,
         21, 23, 25, 27, 29, 31, 33, 35, 37, 39,
@@ -11,3 +15,5 @@ if right_this_minute in odds:
 else:
     print("Not an odd minute.")
 
+where_am_I = getcwd()
+print(where_am_I)
